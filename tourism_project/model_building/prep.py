@@ -62,7 +62,7 @@ if 'CustomerID' in df.columns:
 print("\nIdentifying and handling missing values...")
 
 # For numerical columns, fill with median
-for col in numerical_features:
+for col in numeric_features:
     if df[col].isnull().sum() > 0:
         df[col].fillna(df[col].median(), inplace=True)
 
