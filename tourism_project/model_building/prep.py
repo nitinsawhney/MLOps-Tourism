@@ -94,7 +94,7 @@ print("\nData quality issues in Gender column handled.")
 
 ## Encoding Categorical columns based on the type of data
 print("\nEncoding categorical variables...")
-
+"""
 # Let's Encode Gender uding label encoder
 label_encoder = LabelEncoder()
 df['Gender'] = label_encoder.fit_transform(df['Gender'].astype(str))
@@ -114,7 +114,7 @@ df = pd.get_dummies(
     drop_first=True,
     dtype=int
 )
-
+"""
 
 # Split into X (features) and y (target)
 X = df.drop(columns=[target])
