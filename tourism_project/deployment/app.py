@@ -180,7 +180,7 @@ with col2:
 # Prepare input data
 input_data = pd.DataFrame([{
     'Age': age,
-    'TypeofContact': type_of_contact_map[type_of_contact],
+    'TypeofContact': type_of_contact,
     'CityTier': city_tier,
     'DurationOfPitch': duration_of_pitch,
     'Occupation': occupation,
